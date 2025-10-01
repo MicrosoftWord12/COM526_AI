@@ -77,8 +77,8 @@ def a_star(maze, start, goal):
 
             # if x > 0 or x >= len(maze[0]) or y < 0 or y >= len(maze) or y < 0 or y >= len(maze) and maze[y][x] != "x" and neighbourCell not in g_values:
 
-            if x in range(0, len(maze[1])) and y in range(0, len(maze)) and maze[y][x] == "x" and neighbourCell not in g_values:
-                print(neighbourCell)
+            if x in range(0, len(maze[1])) and y in range(0, len(maze)) and maze[y][x] != "x" and neighbourCell not in g_values:
+                # print(neighbourCell)
 
 
 
