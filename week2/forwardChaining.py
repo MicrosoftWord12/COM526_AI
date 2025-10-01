@@ -15,11 +15,10 @@ if __name__ == "__main__":
     # Perform inference
     conclusions = es.infer()
 
-    if type(conclusions) != list:
-        print(f"I Suggest you: {conclusions[0]}")
-
-    else:
+    if type(conclusions) == list:
         for conclusion in conclusions:
             print(f"I Suggest you: {conclusion}")
+    else:
+        print("Hmm, Unsure!!")
     # Print final facts
     # print("Final facts:", es.facts)
